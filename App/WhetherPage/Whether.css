@@ -1,11 +1,11 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
     background-color: rgb(225, 235, 255);
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -36,13 +36,16 @@ h1{
 
 /* header tag (Search tag) */
 .header{
-    background-color: white;
+    background-color:rgb(255, 255, 255);
     width: 40%;
     margin: auto;
     box-shadow:4px 2px 7px rgb(78, 78, 78);
     border-radius: 20px;
     margin-top: 50px;
     position: relative;
+}
+.header:hover{
+    box-shadow:8px 4px 7px rgb(78, 78, 78);
 }
 .header input {
     font-size: 17px;
@@ -87,7 +90,8 @@ h1{
     font-size: 40px;
 }
 #contentdiv #temper{
-    font-size: 50px;
+    font-size: 30px;
+ 
 }
 #contentdiv #icon{
     width: 200px;
@@ -98,4 +102,19 @@ h1{
 #contentdiv table td{
     padding-top: 20px;
     font-size: 20px;
+}
+
+
+/* Error div styles  */
+.errordiv{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(255, 0, 38);
+    font-size: 25px;
+    font-family:cursive;
+}
+
+.errormessage{
+    
+    
 }

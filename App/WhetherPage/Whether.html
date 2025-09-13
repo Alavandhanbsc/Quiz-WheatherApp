@@ -13,22 +13,22 @@
 
     <div class="header">
     <input type="text" id="city" placeholder="Enter City \\  Eg.., Chennai or London">
-    <button onclick=fetchwhether()>Search</button>
+    <button type="submit" onclick=fetchwhether(event)>Search</button>
     </div>
 
     <div id="contentdiv">
 
        <table>
   <tr>
-    <td id="Cname"></td> <td id="temper"> </td>
+    <td id="Cname"></td>  <td id="temper"> </td>
   </tr>
 
   <tr>
-    <td>Country</td> <td id="country"></td> </td>
+    <td style="font-weight: 600;">Country</td> <td id="country"></td> </td>
   </tr>
 
   <tr>
-    <td>Temperature</td> <td id="temp"></td>
+    <td style="font-weight: 600;"> Temperature</td> <td id="temp"></td>
   </tr>
 
   
@@ -36,27 +36,32 @@
  
 
   <tr>
-    <td>Weather</td> <td id="whether"></td>
+    <td style="font-weight: 600;">Weather</td> <td id="whether"></td>
   </tr>
 
   <tr>
-    <td>Wind Speed</td> <td id="wind"></td>
+    <td style="font-weight: 600;">Wind Speed</td> <td id="wind"></td>
   </tr>
 
   <tr>
-    <td>Sun Raise </td> <td id="sunrise"></td>
+    <td style="font-weight: 600;">Sun Raise </td> <td id="sunrise"></td>
   </tr>
 
   <tr>
-    <td>Sun Set</td> <td id="sunset"></td>
+    <td style="font-weight: 600;">Sun Set</td> <td id="sunset"></td>
   </tr>
 
 </table>
 
-    
-
     </div>
-    <h2 id="error"></h2>
+
+    <h3 id="description" style="text-align: center;font-weight: 100;margin-top: 50px;">This a Wheather Prediction App , It Will Display The Current Whether Of Multiples Of Cities</h3>
+
+    <div class="errordiv">
+      <h2 id="error"></h2>
+      <p  id="errormessage"></p>
+    </div>
+    
 
     <script src="Whether.js"></script>
 </body>
