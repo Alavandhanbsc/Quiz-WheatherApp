@@ -1,0 +1,138 @@
+#backbtn a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+#backbtn{
+    background-color: rgb(255, 59, 91);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+#startquizbtn{
+    background-color: rgb(0, 255, 123);
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+}
+#restartbtn a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#restartbtn{
+    background-color: rgb(0, 255, 123);
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+}
+
+body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to right, #90a8ff, #90d6fe);
+      color: #fff;
+    }
+
+    /* Quiz Container */
+    .quiz-container {
+      background: #fff;
+      color: #333;
+      width: 400px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    /* Title */
+    h1 {
+      margin-bottom: 10px;
+      color: #6a11cb;
+    }
+
+    /* Question */
+    #questions {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    /* Options */
+    #options {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    #options input {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    #options label {
+      cursor: pointer;
+    }
+
+    /* Timer */
+    #timer {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #e63946;
+    }
+
+    /* Next Button */
+    #nextbtn {
+      background: #2575fc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      display: none;
+      transition: 0.3s;
+    }
+
+    #nextbtn:hover {
+      background: #6a11cb;
+    }
+
+    /* Final Score */
+    #finalscore {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #1d3557;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 500px) {
+      .quiz-container {
+        width: 90%;
+      }
+    }

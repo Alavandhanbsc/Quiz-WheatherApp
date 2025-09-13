@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="Whether.css">
+</head>
+
+<body>
+    <h1>This is Our whether prediction app</h1>
+    <a class=".menuanchor" href="../Menu/Menu.html"> <button class="menubtn" id="ouizdirect"> Back to menu </button>  </a>
+
+    
+
+    <div class="header">
+    <input type="text" id="city" placeholder="Enter City \\  Eg.., Chennai or London">
+    <button onclick=fetchwhether()>Search</button>
+    </div>
+
+    <div id="contentdiv">
+
+       <table>
+  <tr>
+    <td id="Cname"></td> <td id="temper"> </td>
+  </tr>
+
+  <tr>
+    <td>Country</td> <td id="country"></td> </td>
+  </tr>
+
+  <tr>
+    <td>Temperature</td> <td id="temp"></td>
+  </tr>
+
+  
+    <img id="icon" src="" alt="">
+ 
+
+  <tr>
+    <td>Weather</td> <td id="whether"></td>
+  </tr>
+
+  <tr>
+    <td>Wind Speed</td> <td id="wind"></td>
+  </tr>
+
+  <tr>
+    <td>Sun Raise </td> <td id="sunrise"></td>
+  </tr>
+
+  <tr>
+    <td>Sun Set</td> <td id="sunset"></td>
+  </tr>
+
+</table>
+
+    
+
+    </div>
+    <h2 id="error"></h2>
+
+    <script src="Whether.js"></script>
+</body>
+</html>
